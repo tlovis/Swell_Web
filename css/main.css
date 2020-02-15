@@ -102,7 +102,7 @@ textarea {
     margin: 10px;
   }
 
- .navbar {    
+ .navbar {
     width: 100%;
     height: 50px;
     display: flex;
@@ -111,7 +111,7 @@ textarea {
     z-index: 10;
     animation: fadeIn 2s linear 1;
   }
-  
+
   .navbar ul {
     width: 100%;
     display: flex;
@@ -120,13 +120,13 @@ textarea {
     padding: 0;
     margin: 0;
   }
-  
+
   .navbar ul li {
     text-align: right;
     list-style: none;
     padding: 0 15px;
   }
-  
+
   .navbar ul a {
     color: white;
     font-weight: 500;
@@ -148,22 +148,22 @@ textarea {
     text-align: center;
     padding-bottom: 20px;
   }
-  
+
   .secondary-text {
     font-size: 1.7rem;
     text-align: center;
     display: block;
     /* padding-bottom: 50px; */
   }
-  
+
   .paragraph-text {
     font-size: 1.5rem;
     text-align: center;
     max-width: 1000px;
     display: block;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
   }
-  
+
   .text-wrapper {
     width: 100%;
     height: auto;
@@ -174,7 +174,7 @@ textarea {
     justify-content: center;
     align-items: center;
   }
-  
+
   .text-wrapper_inner {
     width: 100%;
     height: auto;
@@ -185,8 +185,8 @@ textarea {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   }
-  
-  #logo {        
+
+  #logo {
     width: 300px!important;
     height: 100vh;
     display: flex;
@@ -204,7 +204,7 @@ textarea {
     margin: 0 auto 25px;
     display: block;
   }
-  
+
   #lockup {
     width: 200px;
     height: auto;
@@ -240,7 +240,7 @@ textarea {
     padding: 10px;
     margin: 0 auto;
   }
-  
+
   .download-btn {
     padding: 10px 10px;
     text-decoration: none;
@@ -257,8 +257,8 @@ textarea {
     display: inline-block;
     width: 150px;
     margin: 0 5px;
-  } 
-  
+  }
+
   #download-btn:hover {
     background: #15b78f!important;
   }
@@ -274,7 +274,7 @@ textarea {
     justify-content: space-evenly;
     align-items: center;
   }
-  
+
   .sub-text {
     text-align: center;
     display: inherit;
@@ -289,7 +289,7 @@ textarea {
     display: block;
   }
 
-  .photos { 
+  .photos {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -326,23 +326,23 @@ textarea {
     font-size: 20px;
     width: 25%;
   }
-  
+
   .descriptionName {
     font-size: 26px;
   }
-  
+
   .photoAndDescriptionLEFT > .descriptionDiv > hr {
     margin-top: 0 !important;
     border-color: white;
     width: 250px;
   }
-  
+
   .photoAndDescriptionRIGHT > .descriptionDiv > hr {
     margin-top: 0 !important;
     border-color: rgb(27, 176, 176);
     width: 250px;
   }
-  
+
   .photoAndDescriptionLEFT > img {
     -moz-box-shadow: -3px 3px 8px 5px #496268;
     -webkit-box-shadow: -3px 3px 8px 5px #496268;
@@ -419,6 +419,7 @@ textarea {
   }
 
   .footer {
+    padding-top: 125px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -428,16 +429,16 @@ textarea {
   #balance {
     height: 30px;
   }
-  
+
   @media only screen and (max-width: 768px) {
     .text-wrapper {
       padding: 0;
     }
-  
+
     .navbar ul {
       justify-content: center;
     }
-  
+
     .navbar ul li {
       margin: 1px;
       text-align: center;
@@ -469,24 +470,24 @@ textarea {
 
     #logo-lockup {
       width:130px;
-      height: auto; 
+      height: auto;
     }
-  
+
     #text-content {
       height: auto;
       padding: 20px 10px 0px;
     }
-    
+
     #text-content .title-text {
       font-size: 2rem!important;
       padding-bottom: 0 !important;
     }
-    
+
     #text-content .secondary-text {
       font-size: 0.9rem!important;
       padding-top: 0px !important;
     }
-    
+
     #text-content .paragraph-text {
       font-size: 0.8rem !important;
       margin-bottom: 20px !important;
@@ -499,11 +500,11 @@ textarea {
     .downloadDiv > h2 {
       font-size: 1rem;
     }
-    
+
     .download-btn-wrap {
       flex-direction: column;
     }
-    
+
     .download-btn {
       font-size: 0.7rem;
       margin: 0 auto 15px;
