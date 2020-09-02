@@ -364,12 +364,15 @@ h2 {
 }
 
 .team {
-  height: 160vh;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+}
+
+.recent {
+  margin-top: 15px;
 }
 
 .meet > h2 {
