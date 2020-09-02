@@ -95,6 +95,13 @@ textarea {
   flex-flow: column nowrap;
 }
 
+h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  color:white
+}
+
 h2 {
   width: 100%;
   text-align: center;
