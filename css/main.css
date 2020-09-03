@@ -389,7 +389,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
 }
 
 .devGrid {
@@ -404,6 +404,7 @@ h2 {
 }
 
 .developerImage {
+  margin-top: 30px;
   position: relative;
   height: 150px;
   border-radius: 100%;
@@ -544,6 +545,7 @@ h2 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+    grid-gap: 100px;
     width: 100%;
     height: auto;
   }
