@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
 
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  color: #4A4B53;
+  font-family: Source Sans Pro, sans-serif;
+  font-size:1rem;
+  line-height: 1.5;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  
 }
 
 * {
   box-sizing: border-box;
 }
 
-::-moz-selection {
+/* ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
@@ -22,7 +26,7 @@ html {
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
-}
+} */
 
 /*
  * A better looking default horizontal rule
@@ -85,15 +89,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#container {
+/* #container {
   width: 100%;
   padding: 0;
-  border: transparent solid 1px;
+  border: transparent solid 0px;
   margin: 0 auto;
-  font-family: 'PT sans', sans-serif;
+  font-family: 'Source Sans', sans-serif;
   display: flex;
   flex-flow: column nowrap;
-}
+} */
 
 .feature {
   text-align: center;
@@ -108,16 +112,52 @@ h2 {
 }
 
 .navbar {
+  background-color: #000;
   width: 100%;
-  height: 50px;
+  height: 3.5rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   z-index: 10;
-  animation: fadeIn 2s linear 1;
+  padding: 0rem 2rem;
 }
 
-.navbar ul {
+.brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 2rem;
+}
+
+.nav-title {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #FFD645;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #3734A9;
+  color: white;
+}
+
+/* .navbar ul {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -136,7 +176,7 @@ h2 {
   color: white;
   font-weight: 500;
   text-decoration: none;
-}
+} */
 
 .fab {
   color: white;
