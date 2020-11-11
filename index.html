@@ -23,8 +23,8 @@
   <meta name="twitter:image" href="./img/logo-lockup-3.png">
   <meta name="reddit:image" href="./img/logo-lockup-3.png">
   <meta name="fb:image" href="./img/logo-lockup-3.png">
-  <!-- <meta name="twitter:image:alt" content=""> -->
-  <!-- <meta property="fb:app_id" content="your_app_id" /> -->
+  <meta name="twitter:image:alt" content="">
+  <meta property="fb:app_id" content="your_app_id" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -51,339 +51,41 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <div id="container">
-    <nav class='navbar'>
+  <nav class='navbar'>
+    <div class='nav-wrapper'>
       <div class='brand'>
-        <img class="nav-logo" src="img/swell-logo.png" alt="swell-logo" />
+        <img class="nav-logo" src="img/swell-logo-nav.png" alt="swell-logo" />
         <div class='nav-title'>SWELL</div>
       </div>
       <div class='nav-cta'>
         <button>Download</button>
       </div>
-      <!-- <ul>
-        <li><a target="blank" href="https://github.com/getswell/getswell"><i class="fab fa-github fa-2x"></i></a>
-        </li>
-        <li><a target="blank" href="https://twitter.com/swellapi"><i class="fab fa-twitter fa-2x"></i></a>
-        </li>
-        <li><a target="blank" href="https://www.linkedin.com/company/getswell/"><i
-              class="fab fa-linkedin fa-2x"></i></a>
-        </li>
-      </ul> -->
-    </nav>
-
-
-
-    <div>
-
-      <div id="text-content">
-
-        <p class="secondary-text">Your one-stop shop for sending and monitoring <br /> RESTful, Streaming, GraphQL, and
-          gRPC
-          API requests</p>
-
-        <div class="downloadGradient">
-          <div class="downloadDiv">
-            <h2>Download:</h2>
-            <div class="download-btn-wrap">
-              <a class="download-btn"
-                href="https://github.com/open-source-labs/Swell/releases/download/v0.6.1/Swell-Setup-0.6.1.exe"
-                download="https://github.com/open-source-labs/Swell/releases/download/v0.6.1/Swell-Setup-0.6.1.exe">Windows
-                <br> v0.6.1 </a>
-              <a class="download-btn"
-                href="https://github.com/open-source-labs/Swell/releases/download/v0.6.1/Swell-0.6.1.dmg"
-                download="https://github.com/open-source-labs/Swell/releases/download/v0.6.1/Swell-0.6.1.dmg">macOS <br>
-                v0.6.1 </a>
-              <a class="download-btn"
-                href="https://github.com/open-source-labs/Swell/releases/download/v0.6.1/Swell-0.6.1.AppImage"
-                download="https://github.com/open-source-labs/Swell/releases/download/v0.6.1/Swell-0.6.1.AppImage">Linux
-                <br> v0.6.1 </a>
-            </div>
-          </div>
-        </div>
-
-        <p class="paragraph-text">Swell is a API development tool that enables developers to test endpoints served
-          over streaming technologies including Server-Sent Events (SSE), WebSockets, HTTP2, gRPC, and GraphQL.</p>
-
-      </div>
-
-      <div class="photos">
-        <div>
-          <div class="meet feature">
-            <hr>
-            <h2>New to Swell 0.6.0</h2>
-            <hr>
-          </div>
-          <div class="photoAndDescriptionLEFT">
-            <video class="screenShot" autoplay loop controls>
-              <source src="img/SwellSplash/gifs/ui-showcase.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <!-- <img class="screenShot" src="img/SwellSplash/gifs/Swell_API_GraphQL_Query.gif" /> -->
-            <div class="descriptionDiv">
-              <p class="descriptionName"><strong>Brand New UI</strong>
-                <hr><span>Swell comes with a brand new look! Featured with improved navigation and faster rendering
-                  processes, testing endpoints never felt so smooth!</span></p>
-            </div>
-          </div>
-          <div class="photoAndDescriptionLEFT">
-            <video class="screenShot" autoplay loop controls>
-              <source src="img/SwellSplash/gifs/introspection.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <!-- <img class="screenShot" src="img/SwellSplash/gifs/Swell_API_GraphQL_Query.gif" /> -->
-            <div class="descriptionDiv">
-              <p class="descriptionName"><strong>GraphQL Schema Introspection & Smart Code Editor</strong>
-                <hr><span>Never make a GraphQL mistake again thanks to our new <i>Schema Introspection</i> and <i>Smart
-                    Code Editor</i>. Make queries, mutations, and subscriptions without any of the guesswork!</span></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="photoAndDescriptionRIGHT">
-          <video class="screenShot" autoplay loop controls>
-            <source src="img/SwellSplash/gifs/concurrent.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <img class="screenShot" src="img/SwellSplash/gifs/Swell_API_6_Concurrent_Eevee_Requests.gif" /> -->
-          <div class="descriptionDiv">
-            <p class="descriptionName"><strong>HTTP/2</strong>
-              <hr>Swell supports full HTTP2 multiplexing of requests and responses. HTTP requests to the same host
-              will be sent over the same connection. Swell will attempt HTTP2 for all HTTPS requests by default, but
-              will revert to HTTP1.1 for legacy servers</p>
-          </div>
-        </div>
-
-        <div class="photoAndDescriptionLEFT">
-          <video class="screenShot" autoplay loop controls>
-            <source src="img/SwellSplash/gifs/http.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <img class="screenShot" src="img/SwellSplash/gifs/Swell_API_12_Concurrent_Requests.gif" /> -->
-          <div class="descriptionDiv">
-            <p class="descriptionName"><strong>RESTful APIs</strong>
-              <hr>Just as Swell can test streaming and non-RESTful APIs, Swell can also test your RESTful APIs</p>
-          </div>
-        </div>
-
-        <div class="photoAndDescriptionRIGHT">
-          <video class="screenShot" autoplay loop controls>
-            <source src="img/SwellSplash/gifs/sse.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <img class="screenShot" src="img/SwellSplash/gifs/Swell_API_3_SSE.gif" /> -->
-          <div class="descriptionDiv">
-            <p class="descriptionName"><strong>Server-Sent Events (SSE)</strong>
-              <hr>Connect to SSEs and watch streaming events come in one by one</p>
-          </div>
-        </div>
-
-        <div class="photoAndDescriptionLEFT">
-          <video class="screenShot" autoplay loop controls>
-            <source src="img/SwellSplash/gifs/websockets.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <img class="screenShot" src="img/SwellSplash/gifs/Swell_API_WebSockets.gif" /> -->
-          <div class="descriptionDiv">
-            <p class="descriptionName"><strong>WebSockets (WS)</strong>
-              <hr>Connect directly to WebSocket servers with upgraded HTTP/HTTPS protocols
-              and send messages to test real-time responsiveness</p>
-          </div>
-        </div>
-
-        <div class="photoAndDescriptionRIGHT">
-          <video class="screenShot" autoplay loop controls>
-            <source src="img/SwellSplash/gifs/gql.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <img class="screenShot" src="img/SwellSplash/gifs/Swell_API_GraphQL_Query.gif" /> -->
-          <div class="descriptionDiv">
-            <p class="descriptionName"><strong>GraphQL</strong>
-              <hr><span>Test <i>all three</i> GraphQL root types (query, mutation, subscription) with and without
-                variables</span></p>
-          </div>
-        </div>
-
-
-        <div class="photoAndDescriptionLEFT">
-          <video class="screenShot" autoplay loop controls>
-            <source src="img/SwellSplash/gifs/grpc.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <img class="screenShot" src="img/SwellSplash/gifs/Swell_API_gRPC.gif" /> -->
-          <div class="descriptionDiv">
-            <p class="descriptionName"><strong>gRPC</strong>
-              <hr>Swell includes full support for all four streaming types of gRPC - unary, client stream, server
-              stream, and bidirectional stream</p>
-          </div>
-        </div>
-
-        <div class="photoAndDescriptionRIGHT">
-          <video class="screenShot" autoplay loop controls>
-            <source src="img/SwellSplash/gifs/collections.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <img class="screenShot" src="img/SwellSplash/gifs/Swell_API_ImportExportSave.gif" /> -->
-          <div class="descriptionDiv">
-            <p class="descriptionName"><strong>Collections</strong>
-              <hr>Keep track of your endpoints with collections, and easily import/export groups of requests</p>
-          </div>
-        </div>
-        <!-- <div class="photoAndDescriptionLEFT">
-            <img class="screenShot" src="img/SwellSplash/gifs/Swell_API_Minimize_Expand.gif" />
-            <div class="descriptionDiv"><p class="descriptionName"><strong>Minimize/Expand</strong><hr>Minimize and Expand</p></div>
-          </div> -->
-      </div>
     </div>
+  </nav>
+  
+  <div class='container'>
 
-    <div class="team">
-      <div class="meet">
-        <hr>
-        <h2>Contributors</h2>
-        <hr>
+    <section class='hero'>
+      <div class='hero-wrapper'>
+        <h6 class='sub-header'>
+          HTTP/1.1, HTTP/2, SSE, Web Sockets, GraphQL, gRPC
+        </h6>
+        <h1 class='hero-title'>
+          Testing for Streaming Tech Right at your Desktop.
+        </h1>
+        <h4 class="sub-title">
+          This is a subheader that explains a bit more. It’s more punchy than details, really.
+          Let’s have a think.
+        </h4>
+        <button>Download</button>
       </div>
-      <div class="devGrid">
-        <div class="developerBio">
-          <img class="developerImage" src=./img/SwellTeamPics/GraceKim.jpeg />
-          <p>Grace Kim</p>
-          <a class="githubLink" target="blank" href="https://github.com/gracekiim">@gracekiim</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src=./img/SwellTeamPics/AlexSanhueza.jpeg />
-          <p>Alex Sanhueza</p>
-          <a class="githubLink" target="blank" href="https://github.com/alexsanhueza">@alexsanhueza</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src=./img/SwellTeamPics/WyattBell.jpeg />
-          <p>Wyatt Bell</p>
-          <a class="githubLink" target="blank" href="https://github.com/wcbell51">@wcbell51</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src=./img/SwellTeamPics/JohnMadrigal.jpeg />
-          <p>John Madrigal</p>
-          <a class="githubLink" target="blank" href="https://github.com/johnmadrigal">@johnmadrigal</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src=./img/SwellTeamPics/MichaelMiller.jpeg />
-          <p>Michael Miller</p>
-          <a class="githubLink" target="blank" href="https://github.com/mjmiguel">@mjmiguel</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/GraceSpletzer.jpg" />
-          <p>Grace Spletzer</p>
-          <a class="githubLink" target="blank" href="https://github.com/gspletzer">@gspletzer</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/HideakiAomori.jpg" />
-          <p>Hideaki Aomori</p>
-          <a class="githubLink" target="blank" href="https://github.com/h15200">@h15200</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/NickHealy.jpg" />
-          <p>Nick Healy</p>
-          <a class="githubLink" target="blank" href="https://github.com/nickhealy">@nickhealy</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/MattGin.jpg" />
-          <p>Matt Gin</p>
-          <a class="githubLink" target="blank" href="https://github.com/chunsonhoag.jpg">@chunsonhoag</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/StephanieWood.jpg" />
-          <p>Stephanie Wood</p>
-          <a class="githubLink" target="blank" href="https://github.com/stephwood">@stephwood</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src=./img/SwellTeamPics/KyleCombs.jpg />
-          <p>Kyle Combs</p>
-          <a class="githubLink" target="blank" href="https://github.com/texpatnyc">@texpatnyc</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/JasonOu.jpg" />
-          <p>Jason Ou</p>
-          <a class="githubLink" target="blank" href="https://github.com/jasonou1994">@jasonou1994</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/AnthonyTerruso.jpg" />
-          <p>Anthony Terruso</p>
-          <a class="githubLink" target="blank" href="https://github.com/discrete-projects">@discrete-projects</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/BrandonMarrero.jpg" />
-          <p>Brandon Marrero</p>
-          <a class="githubLink" target="blank" href="https://github.com/brandon6190">@barndon6190</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/KwadwoAsamoah.jpg" />
-          <p>Kwadwo Asamoah</p>
-          <a class="githubLink" target="blank" href="https://github.com/addoasa">@addoasa</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/AbbyChao.jpg" />
-          <p>Abby Chao</p>
-          <a class="githubLink" target="blank" href="https://github.com/abbychao">@abbychao</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/AmandaFlink.jpg" />
-          <p>Amanda Flink</p>
-          <a class="githubLink" target="blank" href="https://github.com/aflinky">@aflinky</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/KajolThapa.jpg" />
-          <p>Kajol Thapa</p>
-          <a class="githubLink" target="blank" href="https://github.com/KajolThapa">@kajolthapa</a>
-        </div>
-        <!-- 3.0 Members -->
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/BillyTran.jpg" />
-          <p>Billy Tran</p>
-          <a class="githubLink" target="blank" href="https://github.com/btctrl">@btctrl</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/PaulRhee.jpg" />
-          <p>Paul Rhee</p>
-          <a class="githubLink" target="blank" href="https://github.com/prheee">@prheee</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/SamParsons.jpeg" />
-          <p>Sam Parsons</p>
-          <a class="githubLink" target="blank" href="https://github.com/sam-parsons">@sam-parsons</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/YoonChoi.jpg" />
-          <p>Yoon Choi</p>
-          <a class="githubLink" target="blank" href="https://github.com/cyoonique">@cyoonique</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/NancyDao.jpg" />
-          <p>Nancy Dao</p>
-          <a class="githubLink" target="blank" href="https://github.com/nancyddao">@nancyddao</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/EvanGrobar.jpg" />
-          <p>Evan Grobar</p>
-          <a class="githubLink" target="blank" href="https://github.com/egrobar">@egrobar</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/DanStein.jpg" />
-          <p>Dan Stein</p>
-          <a class="githubLink" target="blank" href="https://github.com/danst3in">@danst3in</a>
-        </div>
-        <div class="developerBio">
-          <img class="developerImage" src="./img/SwellTeamPics/AmruthUppaluri.jpg" />
-          <p>Amruth Uppaluri</p>
-          <a class="githubLink" target="blank" href="https://github.com/amuuth">@amuuth</a>
-        </div>
-      </div>
+    </section>
 
-    </div>
-    <div class="footer">
-      <p><span><img id="balance" src="img/balance.png" /></span>This project is licensed under the MIT License</p>
-      <p>Swell is an open source project.</p>
-      <a class="github-button" href="https://github.com/open-source-labs/Swell" data-icon="octicon-star"
-        data-size="large" data-show-count="true" aria-label="Star open-source-labs/Swell on GitHub">Star</a>
-    </div>
   </div>
-  </div>
+
+
+    
+    
 
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
