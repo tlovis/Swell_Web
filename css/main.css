@@ -354,10 +354,15 @@ footer {
 .hero-image-wrapper {
   margin-bottom: 3rem;
 }
-  .hero-image {
-  max-width: 85vw;
-  margin-bottom: 5%;
+
+.hero-image {
+  display: block;
+  max-width:880px;
+  max-height:500px;
+  width: auto;
+  height: auto;
 }
+
 .flex-left {
   padding-right: 1.5rem;
 }
