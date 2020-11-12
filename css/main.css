@@ -155,14 +155,14 @@ button:hover {
 }
 
 .hero-wrapper {
-  margin: 6rem auto 5rem auto;
+  margin: 5% auto 5% auto;
   max-width: 1000px;
   text-align: center;
 }
 
 .hero-title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3%;
 }
 
 .hero-image-wrapper {
@@ -186,7 +186,7 @@ margin-bottom: 8%;
 .sub-title {
   max-width: 640px;
   color: white;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 5% auto;
 }
 
 .icons-wrapper {
