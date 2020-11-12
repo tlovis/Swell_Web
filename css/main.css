@@ -456,11 +456,18 @@ p {
 }
 }
 
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .hero-image {
+  width: 800px;
+  margin-bottom: 5%;
+}
+  }
+
 /*tablets, ipads (landscape)*/
 @media (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    max-width: 1000px;
-  }
 
   .hero-image {
   max-width: 800px;
@@ -471,12 +478,9 @@ p {
 
 /*low resolution tablets, mobiles (landscape)*/
 @media (max-width: 767px){
-  .container {
-    max-width: 700px;
-  }
 
   .hero-image {
-  max-width: 680px;
+  max-width: 720px;
   margin-bottom: 5%;
 }
 
@@ -502,10 +506,6 @@ p {
 }
 /*smartphones mobiles (portrait)*/
 @media (max-width: 480px){
-     .hero-image {
-  max-width: 400px;
-  margin-bottom: 5%;
-}
 
    .devGrid {
   display: grid;
