@@ -172,7 +172,11 @@ margin-bottom: 8%;
 }
 
 .hero-image {
-  width: 65vw;
+  display: block;
+  max-width:1280px;
+  max-height:728px;
+  width: auto;
+  height: auto;
 }
 
 .sub-header {
@@ -385,12 +389,15 @@ footer {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
-  max-width: 880px;
 }
-  .hero-image {
-  max-width: 880px;
-  margin-bottom: 5%;
+.hero-image {
+  display: block;
+  max-width:880px;
+  max-height:500px;
+  width: auto;
+  height: auto;
 }
+
 
 h1 {
   font-size: 2.8rem;
@@ -461,8 +468,11 @@ p {
   and (max-device-width: 1366px) 
   and (-webkit-min-device-pixel-ratio: 2) {
   .hero-image {
-  width: 100%;
-  margin-bottom: 5%;
+  display: block;
+  max-width:880px;
+  max-height:500px;
+  width: auto;
+  height: auto;
 }
   }
 
@@ -478,9 +488,12 @@ p {
 
 /*low resolution tablets, mobiles (landscape)*/
 @media (max-width: 767px){
-  .hero-image {
-  width: 100%;
-  margin-bottom: 5%;
+ .hero-image {
+  display: block;
+  max-width:720px;
+  max-height:409px;
+  width: auto;
+  height: auto;
 }
 
   .download-button-wrapper {
