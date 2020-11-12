@@ -182,7 +182,7 @@ margin-bottom: 8%;
 .sub-header {
   font-size: 1rem;
   color: #FFD645;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5%;
   text-transform: uppercase;
 }
 
@@ -231,13 +231,14 @@ margin-bottom: 8%;
 
 .showcase-wrapper h3, .showcase-wrapper-reverse h3 {
   color: #3734A9;
-  margin-bottom: 1rem;
+  line-height: 130%;
+  margin-bottom: 3%;
   font-weight: 600;
 }
 
 .showcase-wrapper h6, .showcase-wrapper-reverse h6 {
   color: #DE33A6;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5%;
   text-transform: none;
 }
 
@@ -261,6 +262,16 @@ margin-bottom: 8%;
   border-radius: 8px;
   /* background-color: #FFD645 */
 }
+
+.download-wrapper h2 {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.download-wrapper h4 {
+  margin: 1% 0 1% 0;
+}
+
 
 .download-button-wrapper {
   margin-top: 3rem;
