@@ -223,8 +223,8 @@ margin-bottom: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .showcase-wrapper h3, .showcase-wrapper-reverse h3 {
