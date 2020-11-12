@@ -11,7 +11,6 @@
    }
 
 html {
-  color: #4A4B53;
   font-size:1rem;
   line-height: 1.5;
   padding: 0;
@@ -22,7 +21,9 @@ html {
 }
 
 body {
-  background-color: #151515 ;
+  background-color: #111111 ;
+color: #222222
+
 }
 
 /* ==========================================================================
@@ -40,18 +41,33 @@ body {
    Author's custom styles
    ========================================================================== */
 
-.container {
-  max-width: 1400px;
+.main {
   padding: 0;
-  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 h1 {
   font-size: 5rem;
   color: white;
   margin-top: 0;
   line-height: 120%;
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #222222
+}
+
+h3 {
+  margin: 0;
 }
 
 h4 {
@@ -61,6 +77,11 @@ h4 {
 h6 {
   font-size:1rem;
   color: #FFD645;
+}
+
+p {
+  margin: 0;
+  line-height: 150%;
 }
 
 nav {
@@ -73,6 +94,15 @@ nav {
   position: fixed;
   z-index: 10;
   padding: 0rem 2rem;
+}
+
+.logo-download {
+  max-width: 8rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  color: white;
 }
 
 .nav-wrapper {
@@ -111,6 +141,7 @@ button {
   cursor: pointer;
   color: #000000;
   background-color: #FFD645;
+  min-width: 10rem;
 }
 
 button:hover {
@@ -120,14 +151,12 @@ button:hover {
 }
 
 .hero {
-  height: 100vh;
-  background-color: #151515;
-  display: flex;
-  justify-content: center;
+  background-color: #111111;
+  
 }
 
 .hero-wrapper {
-  margin-top: 8rem;;
+  margin: 6rem auto 5rem auto;
   max-width: 1000px;
   text-align: center;
 }
@@ -135,6 +164,12 @@ button:hover {
 .hero-title {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.hero-image-wrapper {
+display: flex;
+justify-content: center;
+margin-bottom: 5rem;
 }
 
 .sub-header {
@@ -150,7 +185,104 @@ button:hover {
   margin: 0 auto 5rem auto;
 }
 
+.icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  color: white;
+  opacity: 0.5;
+}
 
+.fab {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.hero-image {
+  max-width: 65vw;
+  margin-bottom: 5rem;
+}
+
+.showcase {
+  background-color: white;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+.showcase-wrapper {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#download-section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: white;
+  color: #3734A9
+}
+
+.download-wrapper {
+  text-align: center;
+}
+
+.download-button-wrapper {
+  margin-top: 3rem;
+}
+
+.download-button {
+  margin: 0.5rem 0.5rem;
+
+}
+
+
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-50 {
+  width: 50%;
+}
+
+.team-wrapper {
+  margin: 5rem auto 5rem auto;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.developerBio {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.devGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
+}
+
+.developerImage {
+  width: 100%;
+  border-radius: 8px;
+}
+
+a.githubLink {
+  color: white;
+}
+
+
+footer {
+  text-align: center;
+  color: white;
+}
 
 /* .navbar ul {
   width: 100%;
@@ -173,14 +305,6 @@ button:hover {
   text-decoration: none;
 } */
 
-/* .fab {
-  color: white;
-  opacity: 0.75;
-}
-
-.fab:hover {
-  opacity: 1 !important;
-} */
 
 /* .title-text {
   font-size: 2.8rem;
@@ -189,11 +313,10 @@ button:hover {
   padding-bottom: 20px;
 } */
 
-.secondary-text {
-  font-size: 1.7rem;
+/*.secondary-text {
+   font-size: 1.7rem;
   text-align: center;
   display: block;
-  /* padding-bottom: 50px; */
 }
 
 .paragraph-text {
@@ -224,7 +347,7 @@ button:hover {
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
+} */
 /* 
 #logo {
   width: 300px !important;
@@ -237,13 +360,6 @@ button:hover {
   padding-bottom: 20px;
   animation: fadeIn 2s linear 1;
 } */
-
-.logo-img {
-  width: 225px;
-  height: auto;
-  margin: 0 auto 25px;
-  display: block;
-}
 
 /* #lockup {
   width: 200px;
@@ -330,14 +446,12 @@ button:hover {
 }
 
 
-
 .githubLink {
-  color: black;
   text-decoration: none;
   font-size: 0.9rem;
 }
 
-.footer {
+.footer 
   padding-top: 2rem;
   display: flex;
   flex-flow: column nowrap;
@@ -392,33 +506,6 @@ button:hover {
     height: auto;
   } */
 
-  #text-content {
-    height: auto;
-    padding: 20px 10px 0px;
-  }
-
-  #text-content .title-text {
-    font-size: 2rem !important;
-    padding-bottom: 0 !important;
-  }
-
-  #text-content .secondary-text {
-    font-size: 0.9rem !important;
-    padding-top: 0px !important;
-  }
-
-  #text-content .paragraph-text {
-    font-size: 0.8rem !important;
-    margin-bottom: 20px !important;
-  }
-
-  .meet > hr {
-    width: 0px;
-  }
-
-  .downloadDiv > h2 {
-    font-size: 1rem;
-  }
 
   .download-btn-wrap {
     flex-direction: column;
@@ -430,40 +517,11 @@ button:hover {
     width: 35vw;
   }
 
-  .photoAndDescriptionLEFT,
-  .photoAndDescriptionRIGHT {
-    height: auto;
-    flex-flow: column-reverse nowrap;
-    padding: 20px 6px;
-  }
-
-  .photoAndDescriptionLEFT > .descriptionDiv,
-  .photoAndDescriptionRIGHT > .descriptionDiv {
-    width: 100%;
-  }
-
-  .team {
-    height: auto;
-    margin-top: 10%;
-  }
 
   .developerBio {
     margin: 10px;
   }
 
-  .devGrid {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 100px;
-    width: 100%;
-    height: auto;
-  }
-
-  .footer {
-    justify-self: flex-end;
-  }
-}
 
 @media only screen and (max-width: 768px) and (min-width: 720px) {
   #text-content .secondary-text {
