@@ -150,8 +150,8 @@ button:hover {
 
 .hero {
   background-color: #111111;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .hero-wrapper {
@@ -217,8 +217,7 @@ margin-bottom: 8%;
 
 .showcase h2 {
   color: #3734A9;
-  margin-top: 0;
-  margin-bottom: 5%;
+  margin: 0% 5% 5% 5%;
 }
 
 .showcase-wrapper, .showcase-wrapper-reverse {
