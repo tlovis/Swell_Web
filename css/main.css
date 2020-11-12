@@ -47,9 +47,9 @@ color: #222222
 }
 
 .container {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1280px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 h1 {
@@ -61,13 +61,12 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
-  margin-top: 0;
-  margin-bottom: 2rem;
   color: #222222
 }
 
 h3 {
   margin: 0;
+  font-size: 2rem;
 }
 
 h4 {
@@ -81,7 +80,7 @@ h6 {
 
 p {
   margin: 0;
-  line-height: 150%;
+  line-height: 170%;
 }
 
 nav {
@@ -136,7 +135,6 @@ button {
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 2px;
-  font-size: 1.15rem;
   font-weight: 400;
   cursor: pointer;
   color: #000000;
@@ -152,6 +150,8 @@ button:hover {
 
 .hero {
   background-color: #111111;
+  padding-left: 5%;
+  padding-right: 5%;
   
 }
 
@@ -169,7 +169,11 @@ button:hover {
 .hero-image-wrapper {
 display: flex;
 justify-content: center;
-margin-bottom: 5rem;
+margin-bottom: 8%;
+}
+
+.hero-image {
+  max-width: 65vw;
 }
 
 .sub-header {
@@ -178,6 +182,7 @@ margin-bottom: 5rem;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
+
 
 .sub-title {
   max-width: 640px;
@@ -197,36 +202,62 @@ margin-bottom: 5rem;
 .fab {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.hero-image {
-  max-width: 65vw;
-  margin-bottom: 5rem;
+  color: white;
 }
 
 .showcase {
   background-color: white;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 8%;
+  padding-bottom: 8%;
   text-align: center;
 }
 
-.showcase-wrapper {
+.showcase h2 {
+  color: #3734A9;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+.showcase-wrapper, .showcase-wrapper-reverse {
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.showcase-wrapper h3, .showcase-wrapper-reverse h3 {
+  color: #3734A9;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.showcase-wrapper h6, .showcase-wrapper-reverse h6 {
+  color: #DE33A6;
+  margin-bottom: 0.5rem;
+  text-transform: none;
+}
+
+.showcase-content {
+  text-align: justify;
+}
+
+.is-grey-bg {
+  background-color: #f2f6fa;
 }
 
 #download-section {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding: 8% 5% 8% 5%;
   background-color: white;
   color: #3734A9
 }
 
 .download-wrapper {
   text-align: center;
+  padding: 0 20% 8% 20%;
+  border-radius: 8px;
+  /* background-color: #FFD645 */
 }
 
 .download-button-wrapper {
@@ -234,10 +265,8 @@ margin-bottom: 5rem;
 }
 
 .download-button {
-  margin: 0.5rem 0.5rem;
-
+  margin: 0.5% 0.5%;
 }
-
 
 .flex-wrapper {
   display: flex;
@@ -245,20 +274,44 @@ margin-bottom: 5rem;
   align-items: center;
 }
 
-.flex-50 {
-  width: 50%;
+.flex-35 {
+  width: 35%;
+}
+
+.flex65 {
+  width:65%;
+}
+
+.flex-left {
+  text-align: left;
+  padding-right: 3rem;
+}
+
+.flex-right {
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.swell-shots {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.team {
+  text-align: center;
 }
 
 .team-wrapper {
-  margin: 5rem auto 5rem auto;
+  margin: 5%;
   display: flex;
   justify-content: center;
   color: white;
 }
 
 .developerBio {
-  color: white;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .devGrid {
@@ -270,12 +323,14 @@ margin-bottom: 5rem;
 }
 
 .developerImage {
-  width: 100%;
-  border-radius: 8px;
+  width: 80%;
+  border-radius: 50%;
+  opacity: 0.7;
 }
 
 a.githubLink {
   color: white;
+  text-decoration: none;
 }
 
 
@@ -284,273 +339,166 @@ footer {
   color: white;
 }
 
-/* .navbar ul {
-  width: 100%;
+/*desktops - higher resolution*/
+/* @media (min-width: 1281px) */
+
+/*laptops, desktops*/
+@media (max-width: 1280px)  {
+  .container {
+    max-width: 1024px;
+  }
+
+.hero-image-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 0;
-  margin: 0;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+  .hero-image {
+  max-width: 85vw;
+  margin-bottom: 5%;
+}
+.flex-left {
+  padding-right: 1.5rem;
 }
 
-.navbar ul li {
-  text-align: right;
-  list-style: none;
-  padding: 0 15px;
+.flex-right {
+  padding-left: 1.5rem;
 }
 
-.navbar ul a {
-  color: white;
-  font-weight: 500;
-  text-decoration: none;
-} */
+.flex-35 {
+  width: 45%;
+}
 
+.flex65 {
+  width:55%;
+}
 
-/* .title-text {
+.download-wrapper {
+  padding: 0 0 5% 0
+}
+
+}
+
+/*tablets, ipads (portrait)*/
+@media screen and (max-width: 1024px){
+  .container {
+    max-width: 720px;
+  }
+  .hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+  .hero-image {
+  max-width: 85vw;
+  margin-bottom: 5%;
+}
+
+h1 {
   font-size: 2.8rem;
-  display: block;
-  text-align: center;
-  padding-bottom: 20px;
-} */
-
-/*.secondary-text {
-   font-size: 1.7rem;
-  text-align: center;
-  display: block;
-}
-
-.paragraph-text {
-  font-size: 1.5rem;
-  text-align: center;
-  max-width: 1000px;
-  display: block;
-  margin-bottom: 50px;
-}
-
-.text-wrapper {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  padding: 0 5% 25px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-wrapper_inner {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  text-align: left;
-  padding: 5%;
-  background: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-} */
-/* 
-#logo {
-  width: 300px !important;
-  height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-  padding-bottom: 20px;
-  animation: fadeIn 2s linear 1;
-} */
-
-/* #lockup {
-  width: 200px;
-  height: auto;
-  margin: 0 auto 50px;
-  display: inherit;
-} */
-
-/* .downloadGradient {
-  padding: 3px;
-  margin: 10px;
-  border-radius: 3px;
-  background: #15b78f;
-  background: -moz-linear-gradient(-45deg, #15b78f 0%, #009bbf 100%);
-  background: -webkit-linear-gradient(-45deg, #15b78f 0%, #009bbf 100%);
-  background: linear-gradient(135deg, #15b78f 0%, #009bbf 100%);
-  animation: Gradient 1s linear infinite;
-}
-
-.downloadDiv {
-  background: white;
-  padding: 20px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.download-btn-wrap {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 600px;
-  padding: 10px;
-  margin: 0 auto;
-}
-
-.download-btn {
-  padding: 10px 10px;
-  text-decoration: none;
-  text-align: center;
-  background: #15b78f;
-  background: -moz-linear-gradient(-45deg, #15b78f 0%, #009bbf 100%);
-  background: -webkit-linear-gradient(-45deg, #15b78f 0%, #009bbf 100%);
-  background: linear-gradient(135deg, #15b78f 0%, #009bbf 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15b78f', endColorstr='#009bbf',GradientType=1 );
-  font-size: 1rem;
   color: white;
-  text-align: center;
-  border-radius: 5px;
-  display: inline-block;
-  width: 150px;
-  margin: 0 5px;
+  margin-top: 0;
+  line-height: 120%;
 }
 
-#download-btn:hover {
-  background: #15b78f !important;
-} */
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #222222
+}
 
-#text-content {
-  background: white;
-  height: auto;
-  /* width: 100vw; */
-  padding: 100px 80px;
-  font-size: 1.2em;
+h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size:0.85rem;
+  color: #FFD645;
+}
+
+p {
+  margin: 0;
+  line-height: 170%;
+}
+
+
+.showcase-wrapper {
+  flex-direction: column;
+}
+
+.showcase-wrapper-reverse {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column-reverse;
 }
 
-.sub-text {
-  text-align: center;
-  display: inherit;
-  margin: 20px 0 0 0;
+.showcase-content {
+  padding-bottom: 1rem;
 }
 
-.screenShot {
-  width: 75%;
-  max-width: 700px; 
-  height: auto;
-  margin: 0 10px;
-  display: block;
+.showcase h2 {
+  margin-bottom: 1rem;
 }
 
-
-.githubLink {
-  text-decoration: none;
-  font-size: 0.9rem;
+.flex-35 {
+  width: 100%;
 }
 
-.footer 
-  padding-top: 2rem;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+.flex-left {
+  padding-right: 0;
 }
 
-#balance {
-  height: 30px;
+.flex-right {
+  padding-left: 0;
+}
 }
 
-@media only screen and (max-width: 768px) {
-  .text-wrapper {
-    padding: 0;
+/*tablets, ipads (landscape)*/
+@media (max-width: 1024px) and (orientation: landscape) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (max-width: 767px){
+  .container {
+    max-width: 700px;
   }
 
-  .navbar ul {
-    justify-content: center;
-  }
-
-  .navbar ul li {
-    margin: 1px;
-    text-align: center;
-    /* background: pink; */
-    height: 50px;
-  }
-
-  /* #logo {
-    width: 150px !important;
-    height: auto;
-    transform: translateY(65px);
-    margin-top: 10%;
-    margin-bottom: 35%;
-  } */
-
-  /* .logo-img {
-    width: 150px;
-    height: auto;
-    margin: 0 auto 25px;
-    display: block;
-  } */
-
-  /* #lockup {
-    width: 200px;
-    height: auto;
-    margin: 0 auto 50px;
-    display: inherit;
-  }
-
-  #logo-lockup {
-    width: 130px;
-    height: auto;
-  } */
-
-
-  .download-btn-wrap {
+  .download-button-wrapper {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .download-btn {
-    font-size: 0.7rem;
-    margin: 0 auto 15px;
-    width: 35vw;
-  }
-
-
-  .developerBio {
-    margin: 10px;
+  .download-button {
+    margin: 0.5rem 0.5rem;
   }
 
 
-@media only screen and (max-width: 768px) and (min-width: 720px) {
-  #text-content .secondary-text {
-    font-size: 1.7rem !important;
-  }
-  #text-content .paragraph-text {
-    font-size: 1.2rem !important;
-  }
+  .devGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1rem;
 }
+}
+/*smartphones mobiles (portrait)*/
+@media (max-width: 480px){
 
-/* @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-/* 
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-    background-size: 400% 400%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 0%;
-    background-size: 100% 100%;
-  }
-} */
+   .devGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 0.5rem;
+}
+}
