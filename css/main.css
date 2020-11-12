@@ -155,7 +155,7 @@ button:hover {
 }
 
 .hero-wrapper {
-  margin: 5% auto 5% auto;
+  margin: 8% auto 5% auto;
   max-width: 1000px;
   text-align: center;
 }
@@ -251,21 +251,24 @@ margin-bottom: 8%;
 }
 
 #download-section {
-  padding: 8% 5% 8% 5%;
+  padding: 4% 5% 8% 5%;
   background-color: white;
   color: #3734A9
 }
 
 .download-wrapper {
   text-align: center;
-  padding: 0 20% 8% 20%;
+  padding: 5% 5% 5% 5%;
   border-radius: 8px;
-  /* background-color: #FFD645 */
+  background: rgb(2,0,36);
+  background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(0,117,144,1) 34%, rgba(0,4,119,1) 100%);
+  color: white;
 }
 
 .download-wrapper h2 {
   margin-top: 2%;
   margin-bottom: 3%;
+  color: white;
 }
 
 .download-wrapper h4 {
@@ -313,6 +316,10 @@ margin-bottom: 8%;
 
 .team {
   text-align: center;
+}
+
+.team h2 {
+  margin-bottom: 8%;
 }
 
 .team-wrapper {
@@ -407,9 +414,6 @@ footer {
   width:55%;
 }
 
-.download-wrapper {
-  padding: 0 0 5% 0
-}
 
 }
 
@@ -441,7 +445,7 @@ h1 {
 h2 {
   font-size: 2.5rem;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2%;
   color: #222222
 }
 
