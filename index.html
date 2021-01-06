@@ -63,7 +63,7 @@
       </div>
     </div>
   </nav>
-  
+
   <div class='main'>
 
     <!-- Hero Section -->
@@ -76,8 +76,8 @@
           Testing for streaming APIs, right at your desktop.
         </h1>
         <h4 class="sub-title">
-          Your one-stop shop for sending and monitoring
-          RESTful, streaming, GraphQL, and gRPC API requests
+          Your one-stop shop for sending, monitoring, and testing
+          RESTful, gRPC, GraphQL, and streaming API requests
         </h4>
         <a href='#download-section'><button>Download</button></a>
         <div class='icons-wrapper'>
@@ -94,11 +94,11 @@
             <img class="hero-image" src="img/hero-image.png" alt="swell dashboard" />
           </div>
     </section >
-    
+
     <!-- Showcase Displays -->
     <section class='showcase'>
       <h2>All the protocols you'll ever need.</h2>
-      
+
       <!-- HTTP/2 -->
       <div class='showcase-wrapper'>
         <div class='flex-35 flex-left'>
@@ -148,10 +148,9 @@
           the connected WS server. Messages are displayed in chatbox format, clearly indicating outgoing and incoming messages.</p>
         </div>
         <div class='flex-65'>
-          <video class="swell-shots" autoplay loop controls>
-            <source src="img/SwellSplash/gifs/WebSockets.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <div class="swell-shots-gif">
+            <img src="img/SwellSplash/gifs/WS.gif" class="swell-shots" />
+          </div>
         </div>
       </div>
     </section>
@@ -160,10 +159,9 @@
     <section class='showcase is-grey-bg'>
       <div class='showcase-wrapper-reverse is-grey-bg'>
         <div class='flex-65'>
-          <video class="swell-shots" autoplay loop controls>
-            <source src="img/SwellSplash/gifs/GraphQl.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <div class="swell-shots-gif">
+            <img src="img/SwellSplash/gifs/GraphqlTest.gif" class="swell-shots" />
+          </div>
         </div>
         <div class='flex-35 flex-right'>
           <h6 class='sub-header'>
@@ -188,13 +186,49 @@
           stream.</p>
         </div>
         <div class='flex-65'>
-          <video class="swell-shots" autoplay loop controls>
-            <source src="img/SwellSplash/gifs/GRPCResponses.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <div class="swell-shots-gif">
+            <img src="img/SwellSplash/gifs/grpcTest.gif" class="swell-shots" />
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Testing -->
+    <section class='showcase is-grey-bg'>
+      <div class='showcase-wrapper-reverse is-grey-bg'>
+        <div class='flex-65'>
+          <div class="swell-shots-gif">
+            <img src="img/SwellSplash/gifs/SimpleResponseTest.gif" class="swell-shots" />
+          </div>
+        </div>
+        <div class='flex-35 flex-right'>
+          <h6 class='sub-header'>
+            Built In Test Suite Editor
+          </h6>
+          <h3>Testing</h3>
+          <p class='showcase-content'> Compose test suites in JavaScript with built in Chai-style TDD/BDD assertion syntax. Tests will resolve on
+            response data and all results will appear in the new Test Response pane. </p>
+        </div>
+      </div>
+    </section>
+
+        <!-- New Features -->
+        <section class='showcase'>
+          <div class='showcase-wrapper'>
+            <div class='flex-35 flex-left'>
+              <h6 class='sub-header'>
+                Automate Your Testing
+              </h6>
+              <h3>New Features in Swell 0.8</h3>
+              <p class='showcase-content'>Execute a collection of requests in succession and receive clear visual feedback of each test's status. Schedule requests to be sent on a regular time interval for endpoint functional validation tests. </p>
+            </div>
+            <div class='flex-65'>
+              <div class="swell-shots-gif">
+                <img src="img/SwellSplash/gifs/ScheduleTest.gif" class="swell-shots" />
+              </div>
+            </div>
+          </div>
+        </section>
 
     <!-- Downloads Section -->
     <section id="download-section">
@@ -219,6 +253,21 @@
           <div class="team container">
                 <h2 class='header'>Contributors</h2>
                 <div class="devGrid">
+                  <div class="developerBio">
+                    <img class="developerImage" src=./img/SwellTeamPics/EdCho.jpeg />
+                    <p>Edward Cho</p>
+                    <a class="githubLink" target="blank" href="https://github.com/edwardcho1231">@EdwardCho1231</a>
+                  </div>
+                  <div class="developerBio">
+                    <img class="developerImage" src=./img/SwellTeamPics/JasonLiggayu.jpg />
+                    <p>Jason Liggayu</p>
+                    <a class="githubLink" target="blank" href="https://github.com/jasonligg">@JasonLigg</a>
+                  </div>
+                  <div class="developerBio">
+                    <img class="developerImage" src=./img/SwellTeamPics/WarrenTait.png />
+                    <p>Warren Tait</p>
+                    <a class="githubLink" target="blank" href="https://github.com/whtait">@Whtait</a>
+                  </div>
                   <div class="developerBio">
                     <img class="developerImage" src=./img/SwellTeamPics/nateadams.jpg />
                     <p>Nathaniel Adams</p>
@@ -370,7 +419,7 @@
                     <a class="githubLink" target="blank" href="https://github.com/amuuth">@amuuth</a>
                   </div>
                 </div>
-          
+
               </div>
       </section>
       <!-- Footer -->
@@ -387,8 +436,8 @@
   </div>
 
 
-    
-    
+
+
 
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>

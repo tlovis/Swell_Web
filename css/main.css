@@ -17,7 +17,7 @@ html {
   margin: 0;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-  
+
 }
 
 body {
@@ -180,7 +180,7 @@ margin-bottom: 8%;
 }
 
 .sub-header {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #FFD645;
   margin-bottom: 1.5%;
   text-transform: uppercase;
@@ -314,6 +314,12 @@ margin-bottom: 8%;
   display: block;
 }
 
+.swell-shots-gif {
+  width: 50vw;
+  height: auto;
+  display: block;
+}
+
 .team {
   text-align: center;
 }
@@ -364,11 +370,11 @@ footer {
 
 /* iPhone X */
 /* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
+  and (orientation: portrait) {
   .hero-image {
     display: block;
     max-width:85vw;
@@ -499,9 +505,9 @@ p {
 }
 }
 
-@media only screen 
-  and (min-device-width: 1025px) 
-  and (max-device-width: 1366px) 
+@media only screen
+  and (min-device-width: 1025px)
+  and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
   .hero-image {
     display: block;
