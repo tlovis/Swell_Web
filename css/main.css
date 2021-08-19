@@ -148,8 +148,7 @@ button:hover {
 
 .hero {
   background-color: #111111;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 5%;
 }
 
 .hero-wrapper {
@@ -178,9 +177,11 @@ button:hover {
 }
 
 .sub-header {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   color: #ffd645;
+  font-weight: bold;
   margin-bottom: 1.5%;
+  margin-top: 10%;
   text-transform: uppercase;
 }
 
@@ -206,7 +207,7 @@ button:hover {
 }
 
 .showcase {
-  background-color: white;
+  background-color: #f5f5f5;
   padding-top: 8%;
   padding-bottom: 8%;
   text-align: center;
@@ -219,10 +220,9 @@ button:hover {
 
 .showcase-wrapper,
 .showcase-wrapper-reverse {
-  background-color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -247,7 +247,7 @@ button:hover {
 }
 
 .is-grey-bg {
-  background-color: #f2f6fa;
+  background-color: #d1dbe4;
 }
 
 #download-section {
@@ -298,18 +298,18 @@ button:hover {
   width: 35%;
 }
 
-.flex65 {
+.flex-65 {
   width: 65%;
 }
 
 .flex-left {
   text-align: left;
-  padding-right: 3rem;
+  padding-right: 4rem;
 }
 
 .flex-right {
   text-align: left;
-  padding-left: 3rem;
+  padding-left: 4rem;
 }
 
 .swell-shots {
@@ -319,7 +319,7 @@ button:hover {
 }
 
 .swell-shots-gif {
-  width: 50vw;
+  width: 45vw;
   height: auto;
   display: block;
 }
@@ -381,6 +381,17 @@ footer {
     width: auto;
     height: auto;
   }
+
+  .sub-header {
+    font-size: 1rem;
+    margin-bottom: 1.5%;
+    margin-top: 10%;
+  }
+
+  .sub-title {
+    max-width: 640px;
+    margin: 0 auto 5% auto;
+  }
 }
 
 /*laptops, desktops*/
@@ -406,7 +417,7 @@ footer {
   }
 
   .flex-right {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
   }
 
   .flex-35 {
