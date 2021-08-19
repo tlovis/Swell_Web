@@ -72,7 +72,7 @@ h4 {
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: #ffd645;
 }
 
@@ -177,7 +177,7 @@ button:hover {
 }
 
 .sub-header {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #ffd645;
   font-weight: bold;
   margin-bottom: 1.5%;
@@ -243,7 +243,7 @@ button:hover {
 }
 
 .showcase-content {
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .is-grey-bg {
@@ -304,12 +304,12 @@ button:hover {
 
 .flex-left {
   text-align: left;
-  padding-right: 4rem;
+  padding-right: 6rem;
 }
 
 .flex-right {
   text-align: left;
-  padding-left: 4rem;
+  padding-left: 6rem;
 }
 
 .swell-shots {
@@ -413,18 +413,18 @@ footer {
   }
 
   .flex-left {
-    padding-right: 1.5rem;
+    /* padding-right: 1.5rem; */
   }
 
   .flex-right {
-    padding-left: 1rem;
+    /* padding-left: 1.5rem; */
   }
 
   .flex-35 {
     width: 45%;
   }
 
-  .flex65 {
+  .flex-65 {
     width: 55%;
   }
 }
