@@ -1,3 +1,3 @@
 # Swell_Web
 
-Website updates for swell 0.11.0
+Website updates for swell 1.0.0

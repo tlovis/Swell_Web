@@ -106,8 +106,8 @@
           </h1>
           <h4 class="sub-title">
             Your one-stop shop for sending, monitoring, and testing RESTful,
-            gRPC, GraphQL, Websocket, and streaming API requests. Now supporting
-            WebRTC and OpenAPI.
+            gRPC, GraphQL, Websocket, OpenAPI, WebRTC, and streaming API requests.
+            Now supporting Webhooks and featuring Dark Mode.
           </h4>
 
           <a href="#download-section"><button>Download</button></a>
@@ -278,13 +278,12 @@
         </div>
       </section>
 
-      <!-- Advanced Websocket Testing (prev group) -->
+      <!-- Advanced Websocket Testing -->
       <section class="showcase">
         <div class="showcase-wrapper">
           <div class="flex-35 flex-left">
             <h6 class="sub-header">Advanced Testing Capabilities</h6>
             <h3>WebSockets</h3>
-
             <p class="showcase-content">
               Connect to a Websocket server and test with a variety of data
               types: binary data (i.e. Binary Large oBjects or array buffers)
@@ -304,7 +303,7 @@
         </div>
       </section>
 
-      <!-- New Features -->
+      <!-- WebRTC and gRPC Testing (prev group) -->
       <section class="showcase is-grey-bg">
         <div class="showcase-wrapper-reverse is-grey-bg">
           <div class="flex-65">
@@ -313,13 +312,56 @@
             </div>
           </div>
           <div class="flex-35 flex-right">
-            <h6 class="sub-header">New Features in Swell v0.10</h6>
             <h3>WebRTC and OpenAPI 3.1</h3>
             <p class="showcase-content">
               Make API requests based on a range of provided options that are
               generated according to specifications defined in a yaml or
               json-formatted OpenAPI document. Plus, test WebRTC signaling by
               verifying ICE candidates and generating an SDP.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WebHooks -->
+      <section class="showcase">
+        <div class="showcase-wrapper">
+          <div class="flex-35 flex-left">
+            <h6 class="sub-header">Advanced Testing Capabilities</h6>
+            <h3>WebHook Testing</h3>
+            <p class="showcase-content">
+              Connect to a Websocket server and test with a variety of data
+              types: binary data (i.e. Binary Large oBjects or array buffers)
+              and strings. Conveniently write mocha/chai assertion tests on data
+              transfers. Further, export data logs as well as measure
+              client/server latency.
+            </p>
+          </div>
+          <div class="flex-65">
+            <div class="swell-shots-gif">
+              <img
+                src="img/SwellSplash/gifs/WS-image.gif"
+                class="swell-shots"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dark Mode -->
+      <section class="showcase is-grey-bg">
+        <div class="showcase-wrapper-reverse is-grey-bg">
+          <div class="flex-65">
+            <div class="swell-shots-gif">
+              <img src="img/SwellSplash/gifs/DarkMode.gif" class="swell-shots" />
+            </div>
+          </div>
+          <div class="flex-35 flex-right">
+            <h3>Dark Mode</h3>
+            <p class="showcase-content">
+              Additionally, Swell v1.0.0 now features a toggle to activate Dark mode.
+              Now users can personalize their layout to enhance their endpoint testing
+              experience.
             </p>
           </div>
         </div>
@@ -344,19 +386,19 @@
               href="https://github.com/open-source-labs/Swell/releases/download/v0.10.0/Swell-Setup-0.10.0.exe"
               download="Swell-Setup-0.10.0.exe
 "
-              ><button>Windows v0.10.0</button></a
+              ><button>Windows v1.0.0</button></a
             >
             <a
               class="download-button"
               href="https://github.com/open-source-labs/Swell/releases/download/v0.10.0/Swell-0.10.0.dmg"
               download="https://github.com/open-source-labs/Swell/releases/download/v0.10.0/Swell-0.10.0.dmg"
-              ><button>macOS v0.10.0</button></a
+              ><button>macOS v1.0.0</button></a
             >
             <a
               class="download-button"
               href="https://github.com/open-source-labs/Swell/releases/download/v0.10.0/Swell-0.10.0.AppImage"
               download="https://github.com/open-source-labs/Swell/releases/download/v0.10.0/Swell-0.10.0.AppImage"
-              ><button>Linux v0.10.0</button></a
+              ><button>Linux v1.0.0</button></a
             >
           </div>
         </div>
@@ -368,7 +410,63 @@
           <h2 class="header">Contributors</h2>
           <div class="devGrid">
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/TedCraig.jpg
+              <img class="developerImage"
+              src=./img/SwellTeamPics/ChrisPan.jpg />
+              <p>Christopher Pan</p>
+              <a
+                class="githubLink"
+                target="blank"
+                href="https://github.com/ChristopherJPan"
+                >@ChristopherJPan</a
+              >
+            </div>
+            <div class="developerBio">
+              <img class="developerImage"
+              src=./img/SwellTeamPics/MichaelPrince.jpg />
+              <p>Michael Prince</p>
+              <a
+                class="githubLink"
+                target="blank"
+                href="https://github.com/MichaelGPrince"
+                >@MichaelGPrince</a
+              >
+            </div>
+            <div class="developerBio">
+              <img class="developerImage"
+              src=./img/SwellTeamPics/AdrianUesugui.JPG />
+              <p>Adrian Uesugui</p>
+              <a
+              class="githubLink"
+              target="blank"
+              href="https://github.com/auesugui"
+              >@auesugui</a
+              >
+            </div>
+            <div class="developerBio">
+              <img class="developerImage"
+              src=./img/SwellTeamPics/JacobViesselman.png />
+              <p>Jacob Viesselman</p>
+              <a
+                class="githubLink"
+                target="blank"
+                href="https://github.com/JacobViesselman"
+                >@JacobViesselman</a
+              >
+            </div>
+            <div class="developerBio">
+              <img class="developerImage"
+              src=./img/SwellTeamPics/JenniferWu.png />
+              <p>Jennifer Wu</p>
+              <a
+                class="githubLink"
+                target="blank"
+                href="https://github.com/jsh-wu"
+                >@jsh-wu</a
+              >
+            </div>
+            <div class="developerBio">
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/TedCraig.jpg
               />
               <p>Ted Craig</p>
               <a
@@ -433,7 +531,8 @@
               >
             </div>
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/Andrea_Li.png
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/Andrea_Li.png
               />
               <p>Andrea Li</p>
               <a
@@ -444,7 +543,8 @@
               >
             </div>
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/TJ.png />
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/TJ.png />
               <p>TJ Wetmore</p>
               <a
                 class="githubLink"
@@ -454,7 +554,8 @@
               >
             </div>
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/Konrad.jpg />
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/Konrad.jpg />
               <p>Konrad</p>
               <a
                 class="githubLink"
@@ -496,7 +597,8 @@
               >
             </div>
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/WarrenTait.jpg
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/WarrenTait.jpg
               />
               <p>Warren Tait</p>
               <a
@@ -507,7 +609,8 @@
               >
             </div>
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/nateadams.jpg
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/nateadams.jpg
               />
               <p>Nathaniel Adams</p>
               <a
@@ -518,7 +621,8 @@
               >
             </div>
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/samhaar.jpg />
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/samhaar.jpg />
               <p>Sam Haar</p>
               <a
                 class="githubLink"
@@ -539,7 +643,8 @@
               >
             </div>
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/robinyoong.jpg
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/robinyoong.jpg
               />
               <p>Robin Yoong</p>
               <a
@@ -550,7 +655,8 @@
               >
             </div>
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/GraceKim.jpeg
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/GraceKim.jpeg
               />
               <p>Grace Kim</p>
               <a
@@ -572,7 +678,8 @@
               >
             </div>
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/WyattBell.jpg
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/WyattBell.jpg
               />
               <p>Wyatt Bell</p>
               <a
@@ -670,7 +777,8 @@
               >
             </div>
             <div class="developerBio">
-              <img class="developerImage" src=./img/SwellTeamPics/KyleCombs.jpg
+              <img class="developerImage" 
+              src=./img/SwellTeamPics/KyleCombs.jpg
               />
               <p>Kyle Combs</p>
               <a
