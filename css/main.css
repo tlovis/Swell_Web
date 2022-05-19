@@ -94,7 +94,7 @@ nav {
 }
 
 .logo-download {
-  max-width: 8rem;
+  max-width: 10rem;
   margin-bottom: 1rem;
 }
 
@@ -109,6 +109,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* min-height: 200px; */
 }
 
 .brand {
@@ -119,7 +120,7 @@ nav {
 }
 
 .nav-logo {
-  height: 2rem;
+  height: 4rem;
 }
 
 .nav-title {
@@ -229,7 +230,7 @@ button:hover {
 
 .showcase-wrapper h3,
 .showcase-wrapper-reverse h3 {
-  color: #3734a9;
+  color: #50809b;
   line-height: 130%;
   margin-bottom: 3%;
   font-weight: 600;
@@ -237,7 +238,7 @@ button:hover {
 
 .showcase-wrapper h6,
 .showcase-wrapper-reverse h6 {
-  color: #de33a6;
+  color: #ff9e43;
   margin-bottom: 0.5%;
   text-transform: none;
 }
